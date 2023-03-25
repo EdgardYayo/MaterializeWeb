@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -12,40 +13,33 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
     />
+    <link rel="stylesheet" href="index.css">
 
     <title>Materialize Project</title>
   </head>
+
   <body>
+
     <header>
-      <nav class="nav-extended blue accent-3">
+      <nav class="nav-extended teal darken-3">
         <div class="nav-wrapper">
           <div class="container">
-            <h1
-              class="brand-logo center"
-              style="
-                margin-top: 20px;
-                font-size: 3.4rem;
-                text-shadow: 1px 1px 3px black;
-              "
-            >
+            <h1 class="brand-logo center" id="title">
               Weblthy
             </h1>
             <a href="#" data-activates="mobile-menu" class="button-collapse"
               ><i class="material-icons">menu</i></a
             >
             <!-- tabs items -->
-            <ul class="tabs tabs-transparent" style="margin-top: 20px">
+            <ul class="tabs tabs-transparent"  id="listMenu">
               <li class="tab">
-                <a class="active" href="#test1"
-                 style="font-style: italic;">Inicio</a>
+                <a class="active" href="#">Inicio</a>
               </li>
               <li class="tab">
-                <a class="active" href="#test2"
-                 style="font-style: italic;">About Us</a>
+                <a class="active" href="#">About Us</a>
               </li>
               <li class="tab">
-                <a class="active" href="#test3"
-                 style="font-style: italic;">Info</a>
+                <a class="active" href="#">Info</a>
               </li>
             </ul>
           </div>
@@ -54,60 +48,53 @@
     </header>
 
     <main>
-      <section
-        style="
-          display: grid;
-          grid-template-columns: repeat(2, 1fr);
-          margin: auto;
-          padding: 10px;
-        "
-      >
-        <div class="center hoverable" style="padding: 10px; border-radius: 5px">
+      <section class="firstSection">
+        <div class="center hoverable">
           <i
-            class="material-icons large green accent-3"
-            style="border-radius: 50%; padding: 5px"
+            class="material-icons large"
+            style="color:#00e676 ;"
             >done</i
           >
-          <p style="font-size: 1.4rem">
+          <p>
             Lorem ipsum, dolor sit amet consectetur adipisicing elit.
             Consequuntur animi repellat laborum minus natus dicta rerum nesciunt
             perspiciatis obcaecati expedita? Nisi nobis quo mollitia ut dolorum
             neque quam impedit velit!
           </p>
         </div>
-        <div class="center hoverable" style="padding: 10px; border-radius: 5px">
+        <div class="center hoverable">
           <i
-            class="material-icons large pink accent-3"
-            style="border-radius: 50%; padding: 5px"
+            class="material-icons large"
+            style="color:#f50057"
             >favorite</i
           >
-          <p style="font-size: 1.4rem">
+          <p>
             Lorem ipsum, dolor sit amet consectetur adipisicing elit.
             Consequuntur animi repellat laborum minus natus dicta rerum nesciunt
             perspiciatis obcaecati expedita? Nisi nobis quo mollitia ut dolorum
             neque quam impedit velit!
           </p>
         </div>
-        <div class="center hoverable" style="padding: 10px; border-radius: 5px">
+        <div class="center hoverable">
           <i
-            class="material-icons large blue accent-3"
-            style="border-radius: 50%; padding: 10px"
+            class="material-icons large"
+            style="color:#2979ff;"
             >feedback</i
           >
-          <p style="font-size: 1.4rem">
+          <p>
             Lorem ipsum, dolor sit amet consectetur adipisicing elit.
             Consequuntur animi repellat laborum minus natus dicta rerum nesciunt
             perspiciatis obcaecati expedita? Nisi nobis quo mollitia ut dolorum
             neque quam impedit velit!
           </p>
         </div>
-        <div class="center hoverable" style="padding: 10px; border-radius: 5px">
+        <div class="center hoverable">
           <i
-            class="material-icons large purple accent-3"
-            style="border-radius: 50%; padding: 7px"
+            class="material-icons large"
+            style="color:#651fff;"
             >extension</i
           >
-          <p style="font-size: 1.4rem">
+          <p>
             Lorem ipsum, dolor sit amet consectetur adipisicing elit.
             Consequuntur animi repellat laborum minus natus dicta rerum nesciunt
             perspiciatis obcaecati expedita? Nisi nobis quo mollitia ut dolorum
@@ -115,14 +102,8 @@
           </p>
         </div>
       </section>
-      <section
-        style="
-          display: grid;
-          grid-template-columns: repeat(2, 1fr);
-          gap: 10px;
-          margin-top: 50px;
-        "
-      >
+
+      <section class="secondSection">
         <div class="card purple darken-1">
           <div class="card-content white-text">
             <span class="card-title"></span>
@@ -143,6 +124,46 @@
             </p>
           </div>
         </div>
+      </section>
+
+      <section class="thirdSection">
+        <div class="card small">
+          <div class="card-image">
+            <img src="./images/Farm.png" alt="farm"/>
+            <span class="card-title black-text">Agronomy and Food Industry</span>
+          </div>
+          <div class="card-content">
+            <p>I am a very simple card. I am good at containing small bits of information.I am convenient because I require little markup to use effectively.</p>
+          </div>
+        </div>
+        <div class="card small">
+          <div class="card-image">
+            <img src="./images/ocean.webp" alt="ocean"/>
+            <span class="card-title black-text">Marine</span>
+          </div>
+          <div class="card-content">
+            <p>I am a very simple card. I am good at containing small bits of information.I am convenient because I require little markup to use effectively.</p>
+          </div>
+        </div>
+        <div class="card small">
+          <div class="card-image">
+            <img src="./images/Industry.webp" alt="industry"/>
+            <span class="card-title">Industry</span>
+          </div>
+          <div class="card-content">
+            <p>I am a very simple card. I am good at containing small bits of information.I am convenient because I require little markup to use effectively.</p>
+          </div>
+        </div>
+        <div class="card small">
+          <div class="card-image">
+            <img src="./images/Capsule.webp" alt="capsule"/>
+            <span class="card-title">Medicine</span>
+          </div>
+          <div class="card-content">
+            <p>I am a very simple card. I am good at containing small bits of information.I am convenient because I require little markup to use effectively.</p>
+          </div>
+        </div>
+
       </section>
     </main>
 

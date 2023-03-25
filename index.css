@@ -1,0 +1,76 @@
+.nav-extended {
+  position: fixed;
+  top: 0;
+  z-index: 1;
+}
+
+#title {
+  margin-top: 20px;
+  font-size: 3.4rem;
+  text-shadow: 1px 1px 3px black;
+}
+
+#listMenu {
+  margin-top: 20px;
+}
+#listMenu li a {
+  font-style: italic;
+  font-size: 1.2rem;
+  text-transform: capitalize;
+}
+
+.firstSection {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  margin: auto;
+  padding: 10px;
+  margin-top: 150px;
+}
+.firstSection div {
+  padding: 10px;
+  border-radius: 5px;
+}
+.firstSection div i {
+  border-radius: 50%;
+  padding: 5px;
+}
+.firstSection div p {
+  font-size: 1.4rem;
+}
+
+.secondSection {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+  margin-top: 50px;
+}
+
+.thirdSection {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(5rem, 1fr));
+  gap: 10px;
+}
+.thirdSection div {
+  background-color: #00695c;
+}
+.thirdSection div .card-title {
+  font-size: 2.4rem;
+  font-weight: bold;
+}
+.thirdSection div .card-content {
+  padding: 10px;
+  color: white;
+}
+
+@media (max-width: 900px) {
+  .thirdSection {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+@media (max-width: 600px) {
+  .firstSection {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}/*# sourceMappingURL=index.css.map */
