@@ -5,18 +5,36 @@
 }
 
 #title {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  letter-spacing: 0.5rem;
+  -webkit-margin-start: 50px;
+          margin-inline-start: 50px;
   margin-top: 20px;
   font-size: 3.4rem;
   text-shadow: 1px 1px 3px black;
+}
+#title i {
+  font-size: 3.4rem;
+  color: black;
+  -webkit-margin-start: 100px;
+          margin-inline-start: 100px;
+}
+#title img {
+  width: 100px;
+  height: 100px;
 }
 
 #listMenu {
   margin-top: 20px;
 }
-#listMenu li a {
-  font-style: italic;
-  font-size: 1.2rem;
-  text-transform: capitalize;
+#listMenu li a i {
+  color: white;
+  filter: drop-shadow(0 0 2px black);
+}
+#listMenu li a:hover {
+  transition: all ease 500ms;
+  transform: translateY(-5px);
 }
 
 .firstSection {
@@ -24,7 +42,7 @@
   grid-template-columns: repeat(2, 1fr);
   margin: auto;
   padding: 10px;
-  margin-top: 150px;
+  margin-top: 50px;
 }
 .firstSection div {
   padding: 10px;
@@ -50,22 +68,33 @@
   grid-template-columns: repeat(4, minmax(5rem, 1fr));
   gap: 10px;
 }
-.thirdSection div {
-  background-color: #00695c;
-}
 .thirdSection div .card-title {
-  font-size: 2.4rem;
+  font-size: 2.2rem;
   font-weight: bold;
 }
 .thirdSection div .card-content {
   padding: 10px;
   color: white;
+  font-size: 0.8rem;
 }
 
 @media (max-width: 900px) {
   .thirdSection {
     display: flex;
     flex-wrap: wrap;
+  }
+  .thirdSection div .card-content {
+    font-size: 1.1rem;
+  }
+  #title {
+    letter-spacing: normal;
+    margin: auto;
+  }
+  #title i {
+    display: none;
+  }
+  #title img {
+    display: none;
   }
 }
 @media (max-width: 600px) {
