@@ -35,15 +35,28 @@
              style="visibility: hidden;" ><i class="material-icons">menu</i></a
             >
             <!-- tabs items -->
-            <ul class="tabs tabs-transparent"  id="listMenu">
-              <li class="tab">
-                <a class="active" href="#"><i class="material-icons">home</i></a>
+            <!-- Dropdown Trigger -->
+            <a class='dropdown-trigger btn black-text' href='#' data-target='dropdown1' style="background:#f4e5c2;">Menu</a>
+            
+            <!-- Dropdown Structure -->
+            <ul id='dropdown1' class='dropdown-content'>
+              <li>
+                <a href="#">
+                  <i class="material-icons">home</i>
+                  What is? 
+                </a>
               </li>
-              <li class="tab">
-                <a class="active" href="#plus"><i class="material-icons">science</i></a>
+              <li>
+                <a href="#plus">
+                  <i class="material-icons">science</i>
+                  Bio + Tech
+                </a>
               </li>
-              <li class="tab">
-                <a class="active" href="#where"><i class="material-icons">collections</i></a>
+              <li>
+                <a href="#where">
+                  <i class="material-icons">collections</i>
+                  Where find it?
+                </a>
               </li>
             </ul>
           </div>
@@ -185,5 +198,6 @@
     </footer>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="./index.js"></script>
   </body>
 </html>
