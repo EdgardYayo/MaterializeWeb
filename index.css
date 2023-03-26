@@ -8,8 +8,6 @@
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   letter-spacing: 0.5rem;
-  -webkit-margin-start: 50px;
-          margin-inline-start: 50px;
   margin-top: 20px;
   font-size: 3.4rem;
   text-shadow: 1px 1px 3px black;

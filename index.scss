@@ -1,124 +1,122 @@
 .nav-extended {
-    position: fixed;
-    top: 0;
-    z-index: 1;
+  position: fixed;
+  top: 0;
+  z-index: 1;
 }
 
-
 #title {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    letter-spacing: 0.5rem;
-    margin-inline-start: 50px;
-    margin-top: 20px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  letter-spacing: 0.5rem;
+  margin-top: 20px;
+  font-size: 3.4rem;
+  text-shadow: 1px 1px 3px black;
+
+  i {
     font-size: 3.4rem;
-    text-shadow: 1px 1px 3px black;
+    color: black;
+    margin-inline-start: 100px;
+  }
 
-    i {
-        font-size:3.4rem;
-        color: black;
-        margin-inline-start: 100px;
-    }
-
-    img {
-        width: 100px;
-        height: 100px;
-    }
+  img {
+    width: 100px;
+    height: 100px;
+  }
 }
 
 #listMenu {
-    margin-top: 20px;
-    
-    li {
-        a{
-            i{
-                color: white;
-                filter: drop-shadow(0 0 2px black);
-            }
-            &:hover{
-                transition: all ease 500ms;
-                transform: translateY(-5px);
-            }
-        }
+  margin-top: 20px;
+
+  li {
+    a {
+      i {
+        color: white;
+        filter: drop-shadow(0 0 2px black);
+      }
+      &:hover {
+        transition: all ease 500ms;
+        transform: translateY(-5px);
+      }
     }
+  }
 }
 
 .firstSection {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    margin: auto;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  margin: auto;
+  padding: 10px;
+  margin-top: 50px;
+
+  div {
     padding: 10px;
-    margin-top: 50px;
+    border-radius: 5px;
 
-    div {
-        padding: 10px; 
-        border-radius: 5px;
-
-        i{
-            border-radius: 50%; 
-            padding: 5px; 
-        }
-
-        p{
-            font-size: 1.4rem
-        }
+    i {
+      border-radius: 50%;
+      padding: 5px;
     }
+
+    p {
+      font-size: 1.4rem;
+    }
+  }
 }
 
 .secondSection {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 10px;
-    margin-top: 50px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+  margin-top: 50px;
 }
 
 .thirdSection {
-    display: grid;
-    grid-template-columns: repeat(4, minmax(5rem, 1fr));
-    gap: 10px;
+  display: grid;
+  grid-template-columns: repeat(4, minmax(5rem, 1fr));
+  gap: 10px;
 
-    div {
-        .card-title {
-            font-size: 2.2rem;
-            font-weight: bold;
-        }
-
-        .card-content {
-            padding: 10px;
-            color: white;
-            font-size: 0.8rem;
-        }
+  div {
+    .card-title {
+      font-size: 2.2rem;
+      font-weight: bold;
     }
+
+    .card-content {
+      padding: 10px;
+      color: white;
+      font-size: 0.8rem;
+    }
+  }
 }
+
 
 
 @media (max-width: 900px) {
-    .thirdSection{
-        display: flex;
-        flex-wrap: wrap;
-        div{
-            .card-content{
-                font-size: 1.1rem;
-            }
-        }
+  .thirdSection {
+    display: flex;
+    flex-wrap: wrap;
+    div {
+      .card-content {
+        font-size: 1.1rem;
+      }
     }
+  }
 
-    #title {
-        letter-spacing: normal;
-        margin: auto;
-        i {
-            display: none;
-        }
-        img {
-            display: none;
-        }
+  #title {
+    letter-spacing: normal;
+    margin: auto;
+    i {
+      display: none;
     }
-
+    img {
+      display: none;
+    }
+  }
 }
 
 @media (max-width: 600px) {
-    .firstSection{
-        display: flex;
-        flex-wrap: wrap;
-    }
+  .firstSection {
+    display: flex;
+    flex-wrap: wrap;
+  }
 }
